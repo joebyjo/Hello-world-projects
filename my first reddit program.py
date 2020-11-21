@@ -1,7 +1,8 @@
 import praw
 import time
-reddit = praw.Reddit(client_id="5iavjdrGXIQrQg",
-                     client_secret="kl9eNT2BEJAzX1XCQ5MfAVQkmyI",
+from config import *
+reddit = praw.Reddit(client_id=REDDIT_CLIENT_ID,
+                     client_secret=REDDIT_CLIENT_SECRET,
                      user_agent="MyFirstScript")
 
 subreddit = reddit.subreddit('dpsdubai')

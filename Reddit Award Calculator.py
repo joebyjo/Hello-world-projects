@@ -1,11 +1,12 @@
 import csv
 import praw
+from config import *
 
 # todo comment id finder
 # todo .csv file maker
 # todo subbreddit id to identify the subreddit
-r = praw.Reddit(client_id="5iavjdrGXIQrQg",
-                client_secret="kl9eNT2BEJAzX1XCQ5MfAVQkmyI",
+r = praw.Reddit(client_id= REDDIT_CLIENT_ID,
+                client_secret=REDDIT_CLIENT_SECRET,
                 user_agent="MyFirstScript")
 
 exceptions = {"Platinum": 700,
